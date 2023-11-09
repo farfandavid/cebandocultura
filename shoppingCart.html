@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .container{
+        padding: 0%;
+        margin-left: 100px;
+        margin-right: 100px;
+        }
+        .container h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        font-size:large;
+        }       
+        .carrito-items{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 15%;
+
+        }
+        .card{
+        box-sizing: border-box;
+        border-top: 2px solid;
+        padding: 20px 0%;
+        }
+        .card img{
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        padding: 80px 10%;
+        margin-left: 7%;
+        border: 2px solid
+        }
+        .product-name{
+        padding: 15px 0%;
+        }
+        .card a{
+        padding: 10px 14%;
+        }
+        .details{
+        display:flex;
+        justify-content:space-between;
+        margin-left: 22%;
+        padding: 0px 15%;
+        }
+        .details .item-cantidad{
+        justify-content: space-between;
+        font-size: 18px;
+        width: 120px;
+        height:20px;
+        line-height: 32px;
+        text-align: center;
+        cursor: pointer;
+        }
+        .subtract-button, .add-button {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        color: black;
+        cursor: pointer;
+        }
+    </style>
+    
+    <div class="container">
+        <h1>Shopping Cart</h1>
+            <div class="carrito-items"> 
+            <a>Product</a>
+            <a>Price</a>
+            <a>Quantity</a>
+            <a>Total</a>
+            </div>
+            <div class="card">
+                <div class="details">
+                    <div class="precio">
+                    <a>$19.99</a>
+                    </div>
+                        <div class="cantidad">
+                        <button class="subtract-button">-</button>
+                        <input type="number" value="1" class="item-cantidad" disabled>
+                        <button class="add-button">+</button>
+                        </div>
+                            <div class="total">
+                            <a>$19.99</a>
+                            </div>
+                </div>
+                    <img>
+                    <div class="product-name">
+                    <a>Product Name</a>
+                    </div>
+            </div>
+
+            <div class="card">
+                <div class="details">
+                    <div class="precio">
+                    <a>$19.99</a>
+                    </div>
+                        <div class="cantidad">
+                        <button class="subtract-button">-</button>
+                        <input type="number" value="1" class="item-cantidad" disabled>
+                        <button class="add-button">+</button>
+                        </div>
+                            <div class="total">
+                            <a>$19.99</a>
+                            </div>
+                </div>
+                    <img>
+                    <div class="product-name">
+                    <a>Product Name</a>
+                    </div>
+        
+        </div>
+    </div>
+</body>
+</html>
