@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .container {
+            border: 1px solid #4d3c3c;
+            max-width: 800px;
+            margin: auto;
+            padding: 15px;
+            margin-top: 10px;
+        }
+
+        .images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .img {
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+            margin: 5px 0;
+        }
+
+        .details {
+            display: flex;
+            margin-top: 10px;
+            flex-direction: column;
+        }
+
+        .container-price {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        #price {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .container3 {
+            text-align: center;
+        }
+
+        @media (min-width :481px) {
+            .details {
+                flex-direction: row;
+            }
+
+            .description {
+                width: 70%;
+                padding-right: 10px;
+            }
+
+            .container3 {
+                width: 30%;
+            }
+
+            h2 {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>product name</h1>
+            <div class="images">
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+            </div>
+            <div class="details">
+                <div class="description">
+                    <h2>Details</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum saepe harum
+                        maxime velit animi vitae
+                        iure expedita mollitia, dolore ullam est aliquid asperiores laborum doloremque quasi
+                        perspiciatis
+                        quo nobis. Tenetur!
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, enim sint cum at quam nostrum
+                        ipsum molestias saepe laborum tenetur, fugit nulla deleniti temporibus dolorum maxime accusamus
+                        eaque reprehenderit porro.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sed sint maiores aspernatur
+                        culpa
+                        consequatur eligendi quod, autem porro, excepturi perferendis eos! Aperiam quod impedit
+                        blanditiis
+                        neque laborum illo minus.
+                    </p>
+                </div>
+                <div class="container3">
+                    <div class="container-price">
+                        <p>Price</p>
+                        <p id="price">$19.99</p>
+                    </div>
+                    <br>
+                    <div class="container-price">
+                        <button>shop now</button>
+                        <button>add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
