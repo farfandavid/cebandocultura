@@ -65,3 +65,148 @@ form>button {
   font-size: 25px;
   min-width: 25%;
 }
+
+.card {
+  width: 15%;
+  border: 2px solid black;
+}
+
+.product-img {
+  border: 2px solid black;
+  height: 300px;
+}
+
+.product-details {
+  padding: 20px;
+}
+
+.product-btns {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.products {
+  display: flex;
+  gap: 20px;
+  padding: 50px;
+  justify-content: center;
+}
+
+/***/
+.carousel-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-container>button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+
+.about-us {
+  padding: 0 25%;
+}
+
+/* Estilos específicos para la página Contact Us */
+
+.contact-us {
+  padding: 0 25%;
+
+}
+
+.contact-us form {
+  margin-top: 20px;
+}
+
+.contact-us label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-us input,
+.contact-us textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-us button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-us button:hover {
+  background-color: #45a049;
+}
+
+/**Login*/
+
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.login-container button {
+  background-color: #4285F4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.login-container form {
+  text-align: left;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.login-container button[type="submit"] {
+  background-color: #4CAF50;
+}

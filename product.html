@@ -4,20 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        main {
-            width: 80%;
-            margin: auto;
-            text-align: center;
-        }
-
         .container {
             border: 1px solid #4d3c3c;
             max-width: 800px;
@@ -86,6 +76,29 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa fa-gg-circle"></i>
+            <h2>Cebando Cultura</h2>
+        </div>
+        <div class="menunav">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <a href="searchProduct.html"><i class="fa fa-search"></i></a>
+            </form>
+            <div class="navlink">
+                <a href="index.html">Home</a>
+                <a href="">Categories</a>
+                <a href="">Brands</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="contactUs.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="navuser">
+            <a href="shoppingCart.html"><i class="fa fa-shopping-cart"></i></a>
+            <i class="fa fa-user-circle"></i>
+        </div>
+    </nav>
     <main>
         <div class="container">
             <h1>product name</h1>
