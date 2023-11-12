@@ -20,119 +20,149 @@
 
 <body>
   <nav class="navbar">
-    <div class="logo">
-      <i class="fa fa-gg-circle"></i>
-      <h2>Cebando Cultura</h2>
-    </div>
-    <div class="menunav">
-      <form action="/action_page.php">
-        <input type="text" placeholder="Search.." name="search">
-        <a href="searchProduct.html"><i class="fa fa-search"></i></a>
-      </form>
-      <div class="navlink">
-        <a href="index.html">Home</a>
-        <a href="">Categories</a>
-        <a href="">Brands</a>
-        <a href="aboutUs.html">About Us</a>
-        <a href="contactUs.html">Contact Us</a>
+    <div class="nav-container">
+      <div class="logo">
+        <i class="fa fa-gg-circle"></i>
+        <h2>Cebando Cultura</h2>
+      </div>
+      <div class="menunav">
+        <div class="search">
+          <input type="text" class="searchTerm" placeholder="Buscar Productos">
+          <a href="searchProduct.html" class="searchButton"><i class="fa fa-search"></i></a>
+        </div>
+        <div class="navlink">
+          <a href="index.html">Inicio</a>
+          <a href="">Categorias</a>
+          <a href="">Marcas</a>
+          <a href="aboutUs.html">Nosotros</a>
+          <a href="contactUs.html">Contactanos</a>
+        </div>
+      </div>
+      <div class="navuser">
+        <a href="shoppingCart.html"><i class="fa fa-shopping-cart"></i></a>
+        <a href="login.html"><i class="fa fa-user-circle"></i></a>
       </div>
     </div>
-    <div class="navuser">
-      <a href="shoppingCart.html"><i class="fa fa-shopping-cart"></i></a>
-      <a href="login.html"><i class="fa fa-user-circle"></i></a>
-
+    <div class="navlinkbot">
+      <a href="index.html">Home</a>
+      <a href="">Categories</a>
+      <a href="">Brands</a>
+      <a href="aboutUs.html">About Us</a>
+      <a href="contactUs.html">Contact Us</a>
     </div>
   </nav>
-  <div class="navlinkbot">
-    <a href="index.html">Home</a>
-    <a href="">Categories</a>
-    <a href="">Brands</a>
-    <a href="aboutUs.html">About Us</a>
-    <a href="contactUs.html">Contact Us</a>
-  </div>
+
   <div class="banner">
     <div class="carousel-container">
       <div class="carousel">
-        <img src="https://cdn.pixabay.com/photo/2021/11/17/20/04/mountains-6804525_1280.jpg" alt="Imagen 1">
-        <img src="https://cdn.pixabay.com/photo/2021/05/17/04/36/mate-6259746_1280.jpg" alt="Imagen 2">
-        <img src="https://cdn.pixabay.com/photo/2020/03/08/15/32/argentina-4912750_1280.jpg" alt="Imagen 3">
+        <img src="img/banner1.jpg" alt="Imagen 1">
+        <img src="img/banner2.jpg">
+        <img src="img/banner3.jpg">
         <!-- Agrega más imágenes según sea necesario -->
       </div>
-
       <button class="prev-btn">&#10094;</button>
       <button class="next-btn">&#10095;</button>
     </div>
-
     <script src="js/script.js"></script>
   </div>
-  <section class="products">
-    <div class="card">
-      <div class="product-img">
+  <div class="center">
+    <div class="separator">
+      <h3>Las Mejores Ofertas</h3>
+    </div>
+  </div>
+  <div class="center">
+    <section class="products">
+      <div class="card">
+        <img src="img/poncho.jpg" alt="">
+        <div class="product-details">
+          <h3>Product Name</h3>
+          <p>$19.99</p>
 
-      </div>
-      <div class="product-details">
-        <h3>Product Name</h3>
-        <p>$19.99</p>
-
+        </div>
         <div class="product-btns">
           <button>Add to Cart</button>
-          <a href="product.html">View</a>
+          <a href="product.html"><i class="fa fa-expand"></i></a>
         </div>
       </div>
-    </div>
-    <div class="card">
-      <div class="product-img">
+      <div class="card">
+        <img src="img/anillos_alpaca.jpeg" alt="">
+        <div class="product-details">
+          <h3>Product Name</h3>
+          <p>$19.99</p>
 
-      </div>
-      <div class="product-details">
-        <h3>Product Name</h3>
-        <p>$19.99</p>
+        </div>
         <div class="product-btns">
           <button>Add to Cart</button>
-          <a href="product.html">View</a>
+          <a href="product.html"><i class="fa fa-expand"></i></a>
         </div>
       </div>
-    </div>
-    <div class="card">
-      <div class="product-img">
+      <div class="card">
+        <img src="img/aritos.jpg" alt="">
+        <div class="product-details">
+          <h3>Product Name</h3>
+          <p>$19.99</p>
 
-      </div>
-      <div class="product-details">
-        <h3>Product Name</h3>
-        <p>$19.99</p>
+
+        </div>
         <div class="product-btns">
           <button>Add to Cart</button>
-          <a href="product.html">View</a>
+          <a href="product.html"><i class="fa fa-expand"></i></a>
         </div>
       </div>
-    </div>
-    <div class="card">
-      <div class="product-img">
+      <div class="card">
+        <img src="img/artesanias.jpg" alt="">
+        <div class="product-details">
+          <h3>Product Name</h3>
+          <p>$19.99</p>
 
-      </div>
-      <div class="product-details">
-        <h3>Product Name</h3>
-        <p>$19.99</p>
+
+        </div>
         <div class="product-btns">
           <button>Add to Cart</button>
-          <a href="product.html">View</a>
+          <a href="product.html"><i class="fa fa-expand"></i></a>
         </div>
       </div>
-    </div>
-    <div class="card">
-      <div class="product-img">
+      <div class="card">
+        <img src="img/duende.jpg" alt="">
+        <div class="product-details">
+          <h3>Product Name</h3>
+          <p>$19.99</p>
 
-      </div>
-      <div class="product-details">
-        <h3>Product Name</h3>
-        <p>$19.99</p>
+
+        </div>
         <div class="product-btns">
           <button>Add to Cart</button>
-          <a href="product.html">View</a>
+          <a href="product.html"><i class="fa fa-expand"></i></a>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="card">
+        <img src="img/Productos artesanales de laca.jpg" alt="">
+        <div class="product-details">
+          <h3>Product Name</h3>
+          <p>$19.99</p>
+
+
+        </div>
+        <div class="product-btns">
+          <button>Add to Cart</button>
+          <a href="product.html"><i class="fa fa-expand"></i></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/tazones.webp" alt="">
+        <div class="product-details">
+          <h3>Product Name</h3>
+          <p>$19.99</p>
+
+
+        </div>
+        <div class="product-btns">
+          <button>Add to Cart</button>
+          <a href="product.html"><i class="fa fa-expand"></i></a>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 
 </html>

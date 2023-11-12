@@ -63,6 +63,21 @@
             text-align: center;
         }
 
+        .container3 button {
+            border-radius: 30.37px;
+            border: 2px solid #BCA37F;
+            background: var(--green, #3A9053);
+            box-shadow: 0px 6.07407px 6.07407px 0px rgba(0, 0, 0, 0.25);
+            padding: 10px;
+            color: white;
+            font-family: 'Crimson Text', serif;
+        }
+
+        img {
+            width: 50%;
+
+        }
+
         @media (min-width :481px) {
             .details {
                 flex-direction: row;
@@ -86,42 +101,42 @@
 
 <body>
     <nav class="navbar">
-        <div class="logo">
-            <i class="fa fa-gg-circle"></i>
-            <h2>Cebando Cultura</h2>
-        </div>
-        <div class="menunav">
-            <form action="/action_page.php">
-                <input type="text" placeholder="Search.." name="search">
-                <a href="searchProduct.html"><i class="fa fa-search"></i></a>
-            </form>
-            <div class="navlink">
-                <a href="index.html">Home</a>
-                <a href="">Categories</a>
-                <a href="">Brands</a>
-                <a href="aboutUs.html">About Us</a>
-                <a href="contactUs.html">Contact Us</a>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa fa-gg-circle"></i>
+                <h2>Cebando Cultura</h2>
+            </div>
+            <div class="menunav">
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Buscar Productos">
+                    <a href="searchProduct.html" class="searchButton"><i class="fa fa-search"></i></a>
+                </div>
+                <div class="navlink">
+                    <a href="index.html">Inicio</a>
+                    <a href="">Categorias</a>
+                    <a href="">Marcas</a>
+                    <a href="aboutUs.html">Nosotros</a>
+                    <a href="contactUs.html">Contactanos</a>
+                </div>
+            </div>
+            <div class="navuser">
+                <a href="shoppingCart.html"><i class="fa fa-shopping-cart"></i></a>
+                <a href="login.html"><i class="fa fa-user-circle"></i></a>
             </div>
         </div>
-        <div class="navuser">
-            <a href="shoppingCart.html"><i class="fa fa-shopping-cart"></i></a>
-            <i class="fa fa-user-circle"></i>
+        <div class="navlinkbot">
+            <a href="index.html">Home</a>
+            <a href="">Categories</a>
+            <a href="">Brands</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="contactUs.html">Contact Us</a>
         </div>
     </nav>
-    <div class="navlinkbot">
-        <a href="index.html">Home</a>
-        <a href="">Categories</a>
-        <a href="">Brands</a>
-        <a href="aboutUs.html">About Us</a>
-        <a href="contactUs.html">Contact Us</a>
-    </div>
     <main>
         <div class="container">
-            <h1>product name</h1>
+            <h1>Product Name</h1>
             <div class="images">
-                <div class="img"></div>
-                <div class="img"></div>
-                <div class="img"></div>
+                <img src="img/poncho.jpg" alt="" srcset="">
             </div>
             <div class="details">
                 <div class="description">

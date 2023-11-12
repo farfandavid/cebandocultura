@@ -55,8 +55,7 @@
         .cardt img {
             display: flex;
             flex-direction: column;
-            height: 100px;
-            padding: 80px 10%;
+            height: 250px;
             margin-left: 7%;
             border: 2px solid
         }
@@ -86,46 +85,48 @@
             cursor: pointer;
         }
 
-        .subtract-button,
-        .add-button {
-            width: 30px;
-            height: 30px;
-            font-size: 20px;
-            color: black;
-            cursor: pointer;
+        button {
+            border-radius: 30.37px;
+            border: 2px solid #BCA37F;
+            background: var(--green, #3A9053);
+            box-shadow: 0px 6.07407px 6.07407px 0px rgba(0, 0, 0, 0.25);
+            padding: 10px;
+            color: white;
+            font-family: 'Crimson Text', serif;
         }
     </style>
     <nav class="navbar">
-        <div class="logo">
-            <i class="fa fa-gg-circle"></i>
-            <h2>Cebando Cultura</h2>
-        </div>
-        <div class="menunav">
-            <form action="/action_page.php">
-                <input type="text" placeholder="Search.." name="search">
-                <a href="searchProduct.html"><i class="fa fa-search"></i></a>
-            </form>
-            <div class="navlink">
-                <a href="index.html">Home</a>
-                <a href="">Categories</a>
-                <a href="">Brands</a>
-                <a href="aboutUs.html">About Us</a>
-                <a href="contactUs.html">Contact Us</a>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa fa-gg-circle"></i>
+                <h2>Cebando Cultura</h2>
+            </div>
+            <div class="menunav">
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Buscar Productos">
+                    <a href="searchProduct.html" class="searchButton"><i class="fa fa-search"></i></a>
+                </div>
+                <div class="navlink">
+                    <a href="index.html">Inicio</a>
+                    <a href="">Categorias</a>
+                    <a href="">Marcas</a>
+                    <a href="aboutUs.html">Nosotros</a>
+                    <a href="contactUs.html">Contactanos</a>
+                </div>
+            </div>
+            <div class="navuser">
+                <a href="shoppingCart.html"><i class="fa fa-shopping-cart"></i></a>
+                <a href="login.html"><i class="fa fa-user-circle"></i></a>
             </div>
         </div>
-        <div class="navuser">
-            <a href="shoppingCart.html"><i class="fa fa-shopping-cart"></i></a>
-
-            <i class="fa fa-user-circle"></i>
+        <div class="navlinkbot">
+            <a href="index.html">Home</a>
+            <a href="">Categories</a>
+            <a href="">Brands</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="contactUs.html">Contact Us</a>
         </div>
     </nav>
-    <div class="navlinkbot">
-        <a href="index.html">Home</a>
-        <a href="">Categories</a>
-        <a href="">Brands</a>
-        <a href="aboutUs.html">About Us</a>
-        <a href="contactUs.html">Contact Us</a>
-    </div>
     <div class="container">
         <h1>Shopping Cart</h1>
         <div class="carrito-items">
@@ -148,7 +149,7 @@
                     <a>$19.99</a>
                 </div>
             </div>
-            <img>
+            <img src="img/anillos_alpaca.jpeg" />
             <div class="product-name">
                 <a>Product Name</a>
             </div>
@@ -168,7 +169,7 @@
                     <a>$19.99</a>
                 </div>
             </div>
-            <img>
+            <img src="img/artesanias.jpg" />
             <div class="product-name">
                 <a>Product Name</a>
             </div>
